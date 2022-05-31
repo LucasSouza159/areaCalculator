@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./area.js" defer></script>
+    <title>Document</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins";
+        }
+        body{
+            background: rgba(0, 0, 0, 0.397); 
+        }
+        .container{
+            background: linear-gradient(to bottom, #ccc, rgb(255, 255, 255));
+            width: 430px;
+            height: 340px;
+            margin: 100px auto;
+            border-radius: 10px;
+            box-shadow: 1px 15px 30px rgb(99, 99, 99);
+        }
+        .central{
+            width: 400px;
+            display: flex;
+            margin: 0 auto;
+            flex-direction: column;
+            padding: 10px;
+        }
+        #btn{
+            color: crimson;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 20px;
+            background: linear-gradient(to left, rgb(255, 174, 0), rgb(255, 81, 0));
+            border: none;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+        .central input{
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+        }
+        .central input:focus{
+            font-size: 20px;
+            color: crimson;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+        }
+        .central p{
+            text-align: center;
+            font-weight: bold;
+            margin-top: 10px;
+            font-size: 30px;
+            color: crimson;
+        }
+        .central h1{
+            margin:30px 0 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="central">
+            <h1>Calcule o valor da área</h1>
+            <input type="number" id="raio" name="raio" placeholder="Digite o raio">
+            <input type="submit" onclick="capturar()" id="btn" value="Gerar area">
+            <p id="valorDigitado"></p>
+        </div>
+    </div>
+</body>
+</html>
